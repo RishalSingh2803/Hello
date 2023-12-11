@@ -10,24 +10,24 @@
 <form method="post" action="/contact">
 {% csrf_token %}
     <div class="form-group">
-      <label for="exampleFormControlInput1">Email address</label>
-      <input type="email" class="form-control" id="email" name="email"placeholder="Enter your email address">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="text" class="form-control" id="name" name="name"placeholder="Enter your name">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Phone Number</label>
-        <input type="phone" class="form-control" id="phone" name="phone"placeholder="Enter your name Phone Number">
+        <label for="phone">Phone Number</label>
+        <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your name Phone Number">
     </div>
       
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Your comments</label>
-      <textarea class="form-control" id="comments" rows="3"></textarea>
+      <label for="desc">Your comments</label>
+      <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
     </div>
 
-    <button type="button" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 
